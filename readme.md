@@ -8,7 +8,7 @@ Este es el repositorio del curso. Ejemplos de código, acceso a videos, etc. ser
 En este enlace tienes acceso al tema de todas las clases del semestre y los videos del curso<br><br>
 
 
-<table>
+<table border="0">
   <tr>
     <td>
       <a href="https://miro.com/app/board/o9J_l2waJG0=">
