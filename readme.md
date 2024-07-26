@@ -45,8 +45,3 @@ Aquí encontrarás el enlace para formar tu equipo de trabajo
 ## Calificaciones
 <a href="">Notas del curso</a>
 
-### Dependencias últiles para Android
-Dependencia para instanciar los viewmodels de forma simple
-```
-implementation("androidx.fragment:fragment-ktx:1.6.2")
-```
