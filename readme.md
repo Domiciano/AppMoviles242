@@ -12,15 +12,14 @@ Este es el repositorio del curso. Ejemplos de código, acceso a videos, etc. ser
 
 
 <a href="https://chat.whatsapp.com/EghTqNNMnuLGiexQnVnXko"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" width="128"></a><br>
-
-<a href="https://chat.whatsapp.com/Ky8clkfDANyDGiy4Ngkmc5">Grupo de Whatsapp</a>
+<a href="https://chat.whatsapp.com/ItCC4adoQtaG3BRVoYRaDU">Grupo de Whatsapp</a>
 
 
 <b>Grupos</b>
-<a href="https://docs.google.com/spreadsheets/d/1NfHjaGIvLU_IuuTbuPuFR93U-qmN7YDs/edit?usp=sharing&ouid=117897710133227559254&rtpof=true&sd=true">Grupos del curso</a>
+<a href="">Grupos del curso</a>
 
 <b>Notas</b>
-<a href="https://docs.google.com/spreadsheets/d/1N59ncJikYrA0fc-W995nqvJHGtll_J16/edit#gid=869603100">Notas del curso</a>
+<a href="">Notas del curso</a>
 
 ### Dependencias últiles para Android
 Dependencia para instanciar los viewmodels de forma simple
