@@ -24,7 +24,7 @@ En este enlace tienes acceso al tema de todas las clases del semestre y los vide
 </table>
 
 ## Grupo
-
+Aquí encontrará el enlace de los participantes del curso. Cualquier pregunta escribe por este medio
 <table style="border-collapse: collapse; border: none;" border="0">
   <tr>
     <td>
@@ -38,11 +38,9 @@ En este enlace tienes acceso al tema de todas las clases del semestre y los vide
   </tr>
 </table>
 
-
-
-
 ## Equipos
-<a href="">Grupos del curso</a>
+Aquí encontrarás el enlace para formar tu equipo de trabajo
+<a href="https://docs.google.com/spreadsheets/d/1DxI8cZeS347uMUgJ3BxUp1snSkLxWV9lzOmIP-SC00g/edit?usp=sharing">Grupos del curso</a>
 
 ## Calificaciones
 <a href="">Notas del curso</a>
