@@ -5,6 +5,7 @@ Este es el repositorio del curso. Ejemplos de código, acceso a videos, etc. ser
 
 
 ## Planeador
+En este enlace tienes acceso al tema de todas las clases del semestre y los videos del curso<br><br>
 <a href="https://miro.com/app/board/o9J_l2waJG0="><img width="128" src="https://store-images.s-microsoft.com/image/apps.59334.13959754522315136.c4ea2415-8e3c-42bf-8f77-e885eb7c11a1.be6eacf3-e0b4-4478-9abc-47192806c1b5?mode=scale&q=90&h=300&w=300" width="128"></a><br>
 <a href="https://miro.com/app/board/o9J_l2waJG0="><small>Planeador de Aplicaciones Móviles</small></a>
 
