@@ -1,7 +1,9 @@
 <img width="256" src="https://www.icesi.edu.co/launiversidad/images/La_universidad/logo_icesi.png">
 
 # Aplicaciones Móviles
-Este es el repositorio del curso. Ejemplos de código, acceso a videos, etc. serán accesibles desde aquí.
+Este curso brinda ofrece un entorno multidisciplinario que refleja los desafíos que se encuentran en su vida profesional. A lo largo de este semestre, se recorrerán todas las etapas del desarrollo de aplicaciones móviles, desde el diseño inicial hasta el despliegue final. Los conceptos adquiridos durante su carrera serán aplicados y se utilizarán herramientas relevantes con el fin de lograr un objetivo común: el lanzamiento de una aplicación móvil innovadora.
+
+Se explorarán los procesos de ideación y prototipado, así como la arquitectura y el diseño de aplicaciones móviles usando lo último en tecnología del ecosistema móvil. Además, se adquirirán habilidades para la construcción de productos mínimos viables. El uso de herramientas de diseño, bases de datos no relacionales, servicios Cloud y servicios web REST será parte integral de este proceso de aprendizaje. Prepárese para enfrentar los desafíos inherentes al desarrollo de aplicaciones móviles y elevar las habilidades a un nivel superior en este apasionante curso.
 
 
 
