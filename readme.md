@@ -9,15 +9,14 @@ Este es el repositorio del curso. Ejemplos de código, acceso a videos, etc. ser
 <a href="https://miro.com/app/board/o9J_l2waJG0="><small>Planeador de Aplicaciones Móviles</small></a>
 
 
-
+## Grupo
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" width="128">
 <a href="https://chat.whatsapp.com/ItCC4adoQtaG3BRVoYRaDU">Grupo de Whatsapp</a>
 
-
-<b>Grupos</b>
+## Equipos
 <a href="">Grupos del curso</a>
 
-<b>Notas</b>
+## Calificaciones
 <a href="">Notas del curso</a>
 
 ### Dependencias últiles para Android
