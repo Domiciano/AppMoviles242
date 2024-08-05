@@ -24,6 +24,13 @@
 <p>Realice el diseño requerido con sus nuevas capacidades de diagramación en Android</p>
 
 
+# Card
+
+<p>
+<img src="https://raw.githubusercontent.com/Domiciano/AppMoviles242/main/1.%20Introducci%C3%B3n%20a%20Android/Recursos/cardexample.jpeg"/>
+</p>
+
+
 
 
 
