@@ -31,6 +31,10 @@
 </p>
 
 
+# Dependencias
+```
+implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+```
 
 
 
