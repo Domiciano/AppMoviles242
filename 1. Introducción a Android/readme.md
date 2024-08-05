@@ -1,4 +1,4 @@
-# Ejercicio de imitación 
+# Ejercicios
 
 <p>La siguiente imagen es una muestra de un contacto en Whatsapp. Intente replicarlo<p>
 
