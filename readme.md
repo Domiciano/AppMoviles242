@@ -45,3 +45,11 @@ Aquí encontrarás el enlace para formar tu equipo de trabajo
 ## Calificaciones
 <a href="">Notas del curso</a>
 
+## Dependencias
+# Dependencias
+```kotlin
+//View Model
+implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+//Livedata
+implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
+```
