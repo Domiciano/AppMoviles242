@@ -57,6 +57,4 @@ implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
 // Livedata
 // Incluye los objetos LiveData y MutableLiveData. Además del método observeAsState()
 implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
-
-
 ```
