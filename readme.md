@@ -58,3 +58,24 @@ implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
 // Incluye los objetos LiveData y MutableLiveData. Además del método observeAsState()
 implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
 ```
+
+### Repositorio de clase
+<table style="border-collapse: collapse; border: none;" border="0">
+  <tr>
+    <td>
+      Clase 1  
+    </td>
+    <td style="vertical-align: middle;">
+      https://github.com/Domiciano/242-Moviles-Clase1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Clase 2  
+    </td>
+    <td style="vertical-align: middle;">
+      https://github.com/Domiciano/242-Moviles-Clase2
+    </td>
+  </tr>
+</table>
+
