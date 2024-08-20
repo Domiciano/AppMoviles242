@@ -57,6 +57,10 @@ implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
 // Livedata
 // Incluye los objetos LiveData y MutableLiveData. Además del método observeAsState()
 implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
+// Nos permite cargar imágenes de la web en un composable de imagen de forma asincrónica
+implementation("io.coil-kt:coil-compose:2.7.0")
+// Nos permite serializar objetos en JSON
+implementation("com.google.code.gson:gson:2.11.0")
 ```
 
 ### Repositorio de clase
