@@ -7,17 +7,16 @@ Esta guía se trata de cómo hacer solicitudes HTTP por medio de una apliación 
 ### Dependencia para instanciar facilmente los viewmodels
 ```kotlin
 // Librería de Retrofit
-implementation("com.squareup.retrofit2:retrofit:2.9.0")  
+implementation("com.squareup.retrofit2:retrofit:2.11.0")  
 
 // Conversor de JSON a objetos integrado con Retrofit
-implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
 // Dependencia para Corutinas
-implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5")
 
 // Librería para instanciar fácilmente los viewmodels
-implementation("androidx.fragment:fragment-ktx:1.6.2")
-
+implementation("androidx.fragment:fragment-ktx:1.8.3")
 ```
 
 Librería para usar imágenes de la Web (Android Views)
