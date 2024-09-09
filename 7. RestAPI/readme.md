@@ -29,7 +29,11 @@ Librería para usar imágenes de la Web (Jetpack Compose)
 implementation("io.coil-kt:coil-compose:2.7.0")
 ```
 
-Retrofit cuenta con un core, pero también un conversor basado en Gson de Google
+Retrofit cuenta con un core, pero también un conversor basado en Gson de Google.
+No olvide de permitir que la APP haga operaciones de red:
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
 
 
 
