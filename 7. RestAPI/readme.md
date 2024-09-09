@@ -22,7 +22,6 @@ implementation("androidx.fragment:fragment-ktx:1.6.2")
 
 Librería para usar imágenes de la Web (Android Views)
 ```
-// Librería para hacer descargas de imagen de forma sencilla
 implementation("com.github.bumptech.glide:glide:4.16.0")
 ```
 
