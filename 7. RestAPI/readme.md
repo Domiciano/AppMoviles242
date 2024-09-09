@@ -18,9 +18,19 @@ implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 // Librería para instanciar fácilmente los viewmodels
 implementation("androidx.fragment:fragment-ktx:1.6.2")
 
+```
+
+Librería para usar imágenes de la Web (Android Views)
+```
 // Librería para hacer descargas de imagen de forma sencilla
 implementation("com.github.bumptech.glide:glide:4.16.0")
 ```
+
+Librería para usar imágenes de la Web (Jetpack Compose)
+```
+implementation("io.coil-kt:coil-compose:2.7.0")
+```
+
 Retrofit cuenta con un core, pero también un conversor basado en Gson de Google
 
 
