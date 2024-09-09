@@ -120,30 +120,6 @@ fun getPokemon(query:String){
 Donde Dispatcher.IO significa que la operación dentro de las llaves se hará en segundo plano
 
 
-### Instanciar un viewmodel
-Si usted quiere instanciar un viewModel desde una Activity
-```kotlin
-private val viewModel: CustomViewModel by viewModels()
-```
-
-### Instanciar un viewmodel compartido
-Si usted quiere instanciar un ViewModel desde un fragmento, tenga en cuenta que el viewmodel tendrá alcance de Actividad, así que este objeto será igual para todos los fragmentos de la actividad de host en común
-```kotlin
-private val viewModel: CustomViewModel by activityViewModels()
-```
-
-
-### Usar Retrofit
-Siempre dentro de una corutina se puede usar retrofit como se muestra en el ejemplo
-```kotlin
-fun getPokemon(query:String){
-        viewModelScope.launch(Dispatchers.IO) {
-            var response = RetrofitConfiguration.pokedexService.getPokemon(query).execute()
-            val pokemon = response.body()
-        }
-    }
-```
-
 
 
 
