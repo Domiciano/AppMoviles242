@@ -38,6 +38,19 @@ Retrofit cuenta con un core, pero también un conversor basado en Gson de Google
 Genere su servicio
 
 En service debe crear una interfaz con el CRUD del servicio. Este ejemplo es para un GET Request
+
+```kotlin
+import icesi.edu.co.apitest.data.dto.Pokemon
+import retrofit2.Call
+import retrofit2.http.GET
+import retrofit2.http.Path
+
+interface PokedexService {
+    @GET("pokemon/{pokemon}")
+    fun getPokemon(@Path("pokemon") pokemon: String): Call<PokemonDTO>
+}
+```
+Pero hay una forma mucho más cool de hacerlo:
 ```kotlin
 import icesi.edu.co.apitest.data.dto.Pokemon
 import retrofit2.Call
@@ -49,6 +62,10 @@ interface PokedexService {
     suspend fun getPokemon(@Path("pokemon") pokemon: String): PokemonDTO
 }
 ```
+
+
+
+
 En dto va el modelo del dato para poder hacer la serialización. Un ejemplo simple:
 ```kotlin
 data class PokemonDTO(
