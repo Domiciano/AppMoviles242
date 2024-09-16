@@ -1,7 +1,7 @@
 # Firestore
 
 Diseñe su base de datos en este enlace <br>
-https://miro.com/app/board/uXjVKXVaSB0=/?share_link_id=638595041895
+[https://miro.com/app/board/uXjVKXVaSB0=/?share_link_id=638595041895](https://miro.com/app/board/uXjVLeCXXks=/)
 
 # Queries en Firestore
 
