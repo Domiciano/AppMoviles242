@@ -61,6 +61,10 @@ implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
 implementation("io.coil-kt:coil-compose:2.7.0")
 // Nos permite serializar objetos en JSON
 implementation("com.google.code.gson:gson:2.11.0")
+//Nos permite usar las corutinas en el contexto de ViewModel
+implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5")
+//Nos permite usar await para llamados a la red
+implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
 ```
 
 ### Repositorio de clase
