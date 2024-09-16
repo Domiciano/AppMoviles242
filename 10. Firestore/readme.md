@@ -11,7 +11,7 @@ https://miro.com/app/board/uXjVKXVaSB0=/?share_link_id=638595041895
 
 2. Puede hacer queries con filtro de no igualdad (!=, <, <=, >, >=) a un campo específico. Sólo puede hacer 1 por consulta.
 
-3. Si quiere aplicar queries con 2 filtros de no igualdad, debe crear un <b>índice compuesto</b>
+3. Si quiere aplicar queries con 2 filtros de no igualdad o más, debe crear un <b>índice compuesto</b>
 
 4. Si se usa un filtro de rango (!=, <, <=, >, >=) a un campo, el orden (orderby) sólo puede ser aplicado al mismo campo
 
