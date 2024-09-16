@@ -48,8 +48,7 @@ Aquí encontrarás el enlace para formar tu equipo de trabajo
 ## Dependencias
 # Dependencias
 ```kotlin
-// Navegación
-// Todo el módulo de navegación incluye los composables NavHost y NavController
+// Todo el módulo de navegación incluye los composables NavHost y NavController. También permite instanciar de forma simple ViewModel()
 implementation("androidx.navigation:navigation-compose:2.7.7")
 // Incluye los objetos LiveData y MutableLiveData. Además del método observeAsState()
 implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
