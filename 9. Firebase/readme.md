@@ -4,15 +4,9 @@
 ## Dependencias básicas
 ```
 //Nos permite usar las corutinas en el contexto de ViewModel
-implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-```
-```
-//Nos permite instanciar el viewmodel de forma simple por medio del delegado
-implementation("androidx.fragment:fragment-ktx:1.6.2")
-```
-```
+implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5")
 //Nos permite usar await para llamados a la red
-implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.0")
+implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
 ```
 
 
