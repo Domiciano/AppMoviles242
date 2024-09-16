@@ -51,10 +51,6 @@ Aquí encontrarás el enlace para formar tu equipo de trabajo
 // Navegación
 // Todo el módulo de navegación incluye los composables NavHost y NavController
 implementation("androidx.navigation:navigation-compose:2.7.7")
-//View Model
-// Incluye la creación simple de instancias de ViewModel
-implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
-// Livedata
 // Incluye los objetos LiveData y MutableLiveData. Además del método observeAsState()
 implementation("androidx.compose.runtime:runtime-livedata:1.6.8")
 // Nos permite cargar imágenes de la web en un composable de imagen de forma asincrónica
