@@ -11,19 +11,21 @@ https://miro.com/app/board/uXjVKXVaSB0=/?share_link_id=638595041895
 
 2. Puede hacer queries con filtro de no igualdad (!=, <, <=, >, >=) a un campo específico. Sólo puede hacer 1 por consulta.
 
-3. Si se usa un filtro de rango (!=, <, <=, >, >=) a un campo, el orden (orderby) sólo puede ser aplicado al mismo campo
+3. Si quiere aplicar queries con 2 filtros de no igualdad, debe crear un <b>índice compuesto</b>
 
-4. No se pueden usar DOS o más ArrayContains aplicadas a un sólo campo. Se pueden usar dos o más ArrayContains en una misma consulta, siempre que se apliquen a diferentes campos del array.
+4. Si se usa un filtro de rango (!=, <, <=, >, >=) a un campo, el orden (orderby) sólo puede ser aplicado al mismo campo
 
-5. Puede hacer 2 o más equalTo (==) en una query
+5. No se pueden usar DOS o más ArrayContains aplicadas a un sólo campo. Se pueden usar dos o más ArrayContains en una misma consulta, siempre que se apliquen a diferentes campos del array.
 
-6. Puede hacer varios filtros de igualdad y uno sólo de rango.
+6. Puede hacer 2 o más equalTo (==) en una query
 
-7. Es posible utilizar más de un filtro de no igualdad en una misma consulta, siempre y cuando se utilicen en campos diferentes. Por ejemplo, se podría hacer una consulta que filtre por todos los documentos cuyo campo "edad" esté entre 18 y 30 años, y cuyo campo "ciudad" sea diferente a "Madrid".
+7. Puede hacer varios filtros de igualdad y uno sólo de rango.
 
-8. En lugar de usar múltiples operadores ArrayContains, es posible utilizar operadores de rango (como < y >) para filtrar elementos dentro de un array. Por ejemplo, se podría hacer una consulta que filtre los documentos que contengan al menos un elemento dentro de un array que esté entre 5 y 10.
+8. Es posible utilizar más de un filtro de no igualdad en una misma consulta, siempre y cuando se utilicen en campos diferentes. Por ejemplo, se podría hacer una consulta que filtre por todos los documentos cuyo campo "edad" esté entre 18 y 30 años, y cuyo campo "ciudad" sea diferente a "Madrid".
 
-9. Es posible utilizar varios filtros de igualdad en una misma consulta, siempre y cuando se utilicen en campos diferentes. Por ejemplo, se podría hacer una consulta que filtre por todos los documentos cuyo campo "ciudad" sea igual a "Madrid" y cuyo campo "edad" sea igual a 25 años.
+9. En lugar de usar múltiples operadores ArrayContains, es posible utilizar operadores de rango (como < y >) para filtrar elementos dentro de un array. Por ejemplo, se podría hacer una consulta que filtre los documentos que contengan al menos un elemento dentro de un array que esté entre 5 y 10.
+
+10. Es posible utilizar varios filtros de igualdad en una misma consulta, siempre y cuando se utilicen en campos diferentes. Por ejemplo, se podría hacer una consulta que filtre por todos los documentos cuyo campo "ciudad" sea igual a "Madrid" y cuyo campo "edad" sea igual a 25 años.
 
 9. En una misma consulta es posible utilizar múltiples filtros de rango (como < y >), siempre y cuando se utilicen en campos diferentes.
 
