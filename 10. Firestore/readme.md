@@ -11,15 +11,15 @@ https://miro.com/app/board/uXjVKXVaSB0=/?share_link_id=638595041895
 
 2. Puede hacer queries con filtro de no igualdad (!=, <, <=, >, >=) a un campo específico. Sólo puede hacer 1 por consulta.
 
-3. Si quiere aplicar queries con 2 filtros de no igualdad o más, debe crear un <b>índice compuesto</b>
+3. Puede hacer varios filtros de igualdad y uno sólo de rango.
 
-4. Si se usa un filtro de rango (!=, <, <=, >, >=) a un campo, el orden (orderby) sólo puede ser aplicado al mismo campo
+4. Si quiere aplicar queries con 2 filtros de no igualdad o más, debe crear un <b>índice compuesto</b>
 
-5. No se pueden usar DOS o más ArrayContains aplicadas a un sólo campo. Se pueden usar dos o más ArrayContains en una misma consulta, siempre que se apliquen a diferentes campos del array.
+5. Si se usa un filtro de rango (!=, <, <=, >, >=) a un campo, el orden (orderby) sólo puede ser aplicado al mismo campo
 
-6. Puede hacer 2 o más equalTo (==) en una query
+6. No se pueden usar DOS o más ArrayContains aplicadas a un sólo campo. Se pueden usar dos o más ArrayContains en una misma consulta, siempre que se apliquen a diferentes campos del array.
 
-7. Puede hacer varios filtros de igualdad y uno sólo de rango.
+7. Puede hacer 2 o más equalTo (==) en una query
 
 8. Es posible utilizar más de un filtro de no igualdad en una misma consulta, siempre y cuando se utilicen en campos diferentes. Por ejemplo, se podría hacer una consulta que filtre por todos los documentos cuyo campo "edad" esté entre 18 y 30 años, y cuyo campo "ciudad" sea diferente a "Madrid".
 
