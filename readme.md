@@ -80,5 +80,17 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
       https://github.com/Domiciano/242-Moviles-Clase2
     </td>
   </tr>
+  
+  <tr>
+    <td>
+      Clase 9, 10, 11 
+    </td>
+    <td style="vertical-align: middle;">
+      https://github.com/Domiciano/AppIcesi242
+    </td>
+  </tr>
 </table>
+
+
+
 
