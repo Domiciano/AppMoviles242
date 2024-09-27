@@ -66,7 +66,7 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
 <table style="border-collapse: collapse; border: none;" border="0">
   <tr>
     <td>
-      Clase 1  
+      Clase 1 - Jetpack Compose
     </td>
     <td style="vertical-align: middle;">
       https://github.com/Domiciano/242-Moviles-Clase1
@@ -74,7 +74,7 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
   </tr>
   <tr>
     <td>
-      Clase 2  
+      Clase 2 - ViewModel
     </td>
     <td style="vertical-align: middle;">
       https://github.com/Domiciano/242-Moviles-Clase2
