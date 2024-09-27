@@ -100,6 +100,14 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
     </td>
   </tr>
 
+  <tr>
+    <td>
+      Clase 8 - Base de datos
+    </td>
+    <td style="vertical-align: middle;">
+      Hicimos un primer modelo sobre la base de datos del proyecto final
+    </td>
+  </tr>
   
   
   <tr>
