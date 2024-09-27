@@ -92,7 +92,7 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
 
   <tr>
     <td>
-      Clase 4
+      Clase 5
     </td>
     <td style="vertical-align: middle;">
       Pitch Elevator
@@ -101,7 +101,7 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
 
   <tr>
     <td>
-      Clase 5
+      Clase 6
     </td>
     <td style="vertical-align: middle;">
       Presentación de Prototipos
