@@ -80,6 +80,16 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.9.0")
       https://github.com/Domiciano/242-Moviles-Clase2
     </td>
   </tr>
+  <tr>
+    <td>
+      Clase 7 - Pokedex  
+    </td>
+    <td style="vertical-align: middle;">
+      https://github.com/Domiciano/242-Moviles-Clase7
+    </td>
+  </tr>
+
+  
   
   <tr>
     <td>
