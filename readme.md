@@ -43,7 +43,7 @@ Aquí encontrarás el enlace para formar tu equipo de trabajo
 <a href="https://docs.google.com/spreadsheets/d/1DxI8cZeS347uMUgJ3BxUp1snSkLxWV9lzOmIP-SC00g/edit?usp=sharing">Grupos del curso</a>
 
 ## Calificaciones
-<a href="">Notas del curso</a>
+<a href="https://docs.google.com/spreadsheets/d/1v2DH-2iVOHqwvlojzfbnv4mu6-bJ1kaR/edit?usp=sharing&ouid=117897710133227559254&rtpof=true&sd=true">Notas del curso</a>
 
 ## Dependencias
 # Dependencias
