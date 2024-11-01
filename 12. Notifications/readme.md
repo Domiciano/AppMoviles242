@@ -50,8 +50,7 @@ fun RequestPermission() {
     LaunchedEffect(true){
         permissionsLauncher.launch(
             arrayOf(
-                Manifest.permission.POST_NOTIFICATIONS,
-                Manifest.permission.CAMERA
+                Manifest.permission.POST_NOTIFICATIONS
             )
         )
     }
