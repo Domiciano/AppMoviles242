@@ -38,6 +38,31 @@ Para android 13 o superior, se requiere usar este permiso
 ```
 
 ## ::1D. No olvide perdir el permiso en tiempo de ejecución
+Versión Jetpack Compose
+```kotlin
+@Composable
+fun RequestPermission() {
+    val permissionsLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestMultiplePermissions()
+    ) {
+
+    }
+    LaunchedEffect(true){
+        permissionsLauncher.launch(
+            arrayOf(
+                Manifest.permission.POST_NOTIFICATIONS,
+                Manifest.permission.CAMERA
+            )
+        )
+    }
+}
+```
+
+
+
+
+Versión Android Views
+
 ```kotlin
 requestPermissions(
     arrayOf(
