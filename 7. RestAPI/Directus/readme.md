@@ -12,7 +12,8 @@ Registrar un usuario usando un rol específico dentro de la aplicación
 Autenticarse y obtener access_token y refresh_token
 
 ## Usuarios
-Recuperar mis datos de acuerdo a mi token
+1. Recuperar mis datos de acuerdo a mi token
+2. Listar usuarios, pero con campos específicos. Se puede crear la política basada en campos dentro del administrador
 
 # Permisos
  Recuperar mis permisos de acuerdo a mi token
