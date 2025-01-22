@@ -60,6 +60,16 @@ curl --location 'http://localhost:8055/auth/login' \
     "password": "alfabeta"
 }'
 ```
+### Response
+```json
+{
+    "data": {
+        "expires": 900000,
+        "refresh_token": "xXRxYMc81m3dgnrbx2t26Ob_-4IBTSOovFuH1fAT_XFtw3n5U-q3ZQ-7iYGSrtYL",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdkMTc4YmJlLWRjOWYtNGVkMy04MDg4LWY2OTJiMzMzYzljZCIsInJvbGUiOiIzMzFjOTAyOC1lM2Q0LTRhYTQtOTc0Mi00ZDNkMGQwOWQ4ZjMiLCJhcHBfYWNjZXNzIjp0cnVlLCJhZG1pbl9hY2Nlc3MiOnRydWUsImlhdCI6MTczNzU2MTA2NywiZXhwIjoxNzM3NTYxOTY3LCJpc3MiOiJkaXJlY3R1cyJ9.b4H9LXOdaqh2nhoJU3i2QCA-N0C0CbIYV1NgpCWBvuE"
+    }
+}
+```
 ## Registro de usuario
 ### Request
 ```bash
