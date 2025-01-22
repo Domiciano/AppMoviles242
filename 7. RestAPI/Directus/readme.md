@@ -49,6 +49,9 @@ Usted debe diseñar el modelo de datos para que corra en la base de datos de Pos
 
 ## Login
 ```bash
+method: POST
+```
+```bash
 curl --location 'http://localhost:8055/auth/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -57,6 +60,9 @@ curl --location 'http://localhost:8055/auth/login' \
 }'
 ```
 ## Registro de usuario
+```bash
+method: POST
+```
 ```bash
 curl --location 'http://localhost:8055/users' \
 --header 'Content-Type: application/json' \
@@ -71,10 +77,16 @@ curl --location 'http://localhost:8055/users' \
 
 ## Obtener usuarios
 ```bash
+method: GET
+```
+```bash
 curl --location 'http://localhost:8055/users'
 ```
 
 ## Obtener mi usuario
+```bash
+method: GET
+```
 ```bash
 curl --location 'http://localhost:8055/users/me' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdkMTc4YmJlLWRjOWYtNGVkMy04MDg4LWY2OTJiMzMzYzljZCIsInJvbGUiOiIzMzFjOTAyOC1lM2Q0LTRhYTQtOTc0Mi00ZDNkMGQwOWQ4ZjMiLCJhcHBfYWNjZXNzIjp0cnVlLCJhZG1pbl9hY2Nlc3MiOnRydWUsImlhdCI6MTczNzU1OTM5MSwiZXhwIjoxNzM3NTYwMjkxLCJpc3MiOiJkaXJlY3R1cyJ9.vmBn93HKk7dhlkZRRzIsyMabl0QFItWRMxWyB3dAmR4'
@@ -83,11 +95,17 @@ curl --location 'http://localhost:8055/users/me' \
 
 ## Obtener mis permisos
 ```bash
+method: GET
+```
+```bash
 curl --location 'http://localhost:8055/permissions/me' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI3YWUyMjJkLWRmNjItNDA5ZC1hNDEzLTM5M2ZlNTJkNTNkMCIsInJvbGUiOiIxNzU1M2ExNS1lMmJiLTRhZmMtODE0NC0wNjZlZWVjODkzMGMiLCJhcHBfYWNjZXNzIjpmYWxzZSwiYWRtaW5fYWNjZXNzIjpmYWxzZSwiaWF0IjoxNzM3MTQ2NzI4LCJleHAiOjE3MzcxNDc2MjgsImlzcyI6ImRpcmVjdHVzIn0.Iwi-FHU5GkubYR5khmBR30acXhU2P01eyaAXWnclcl4'
 ```
 
 ## Obtener rol por ID
+```bash
+method: GET
+```
 ```bash
 curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f3'
 ```
@@ -95,26 +113,125 @@ curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f
 # Data
 
 ## Obtener todos los registros de una colección
+```bash
+method: GET
+```
 ```
 curl --location 'http://localhost:8055/items/post'
 ```
 
 ## Obtener un registro por ID
+```bash
+method: GET
 ```
+```bash
 curl --location 'http://localhost:8055/items/post/11'
 ```
 
 ## Filtrar por medio de equivalencia en un campo
+```bash
+method: GET
 ```
+```bash
 curl --location --globoff 'http://localhost:8055/items/post?filter[title][_eq]=Alfa'
 ```
 
-## Seleccionar campos a obtener
+## Filtrar por medio del operador contains
+```bash
+method: GET
 ```
+```
+curl --location --globoff 'http://localhost:8055/items/post?filter[title][_icontains]=mMa'
+```
+
+## Seleccionar campos a obtener
+```bash
+method: GET
+```
+```bash
 curl --location 'http://localhost:8055/items/post?fields=title,body'
 ```
 
+## Paginación
+```bash
+method: GET
+```
+```bash
+curl --location 'http://localhost:8055/items/post?limit=5&offset=0'
+```
 
+## Ordenamiento
+```bash
+method: GET
+```
+```bash
+curl --location 'http://localhost:8055/items/post?sort=-title'
+```
+
+## Búsqueda por cualquier campo
+```bash
+method: GET
+```
+```
+curl --location 'http://localhost:8055/items/post?search=fa'
+```
+
+## Agregar elemento
+```bash
+method: POST
+```
+
+```bash
+curl --location 'http://localhost:8055/items/post' \
+--header 'Content-Type: application/json' \
+--data '{
+    "id": 19,
+    "title": "Postman",
+    "body": "Postman body"
+}'
+```
+
+## Agregar grupo de elementos
+```bash
+method: POST
+```
+
+```bash
+curl --location 'http://localhost:8055/items/post' \
+--header 'Content-Type: application/json' \
+--data '[
+    {
+        "id": 21,
+        "title": "Postman",
+        "body": "Postman body"
+    },
+    {
+        "id": 22,
+        "title": "Postman",
+        "body": "Postman body"
+    }
+]'
+```
+
+## Cambiar valores de campos
+```bash
+method: PATCH
+```
+```bash
+curl --location --request PATCH 'http://localhost:8055/items/post/22' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title": "Patched item"
+}'
+```
+
+## Eliminar elemento
+```bash
+method: DELETE
+```
+```bash
+curl --location --request DELETE 'http://localhost:8055/items/post/21'
+```
 
 # Files
 
