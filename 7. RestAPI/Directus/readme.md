@@ -244,7 +244,6 @@ curl --location 'http://localhost:8055/files' \
 --form 'file=@"/Users/Alfa/profile.png"'
 ```
 ### Response
-Respuesta esperada
 ```json
 {
     "data": {
