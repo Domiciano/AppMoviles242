@@ -243,8 +243,41 @@ method: POST
 curl --location 'http://localhost:8055/files' \
 --form 'file=@"/Users/Alfa/profile.png"'
 ```
+Respuesta esperada
+```json
+{
+    "data": {
+        "id": "4f794762-e24d-4d95-9c30-82466a875dbd",
+        "storage": "local",
+        "filename_disk": "4f794762-e24d-4d95-9c30-82466a875dbd.png",
+        "filename_download": "Logo nuevo icesi blanco 2.png",
+        "title": "Logo Nuevo Icesi Blanco 2",
+        "type": "image/png",
+        "folder": null,
+        "uploaded_by": null,
+        "created_on": "2025-01-22T15:46:24.068Z",
+        "modified_by": null,
+        "modified_on": "2025-01-22T15:46:24.197Z",
+        "charset": null,
+        "filesize": "525282",
+        "width": 9301,
+        "height": 3460,
+        "duration": null,
+        "embed": null,
+        "description": null,
+        "location": null,
+        "tags": null,
+        "metadata": {},
+        "focal_point_x": null,
+        "focal_point_y": null,
+        "tus_id": null,
+        "tus_data": null,
+        "uploaded_on": "2025-01-22T15:46:24.195Z"
+    }
+}
+```
 
-### Cambiar metadatos del file
+### Cambiar metadatos del archivo
 ```bash
 method: PATCH
 ```
