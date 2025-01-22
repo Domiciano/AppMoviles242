@@ -234,8 +234,8 @@ curl --location --request DELETE 'http://localhost:8055/items/post/21'
 ```
 
 # Files
-
 ## Subir archivo
+### Request
 ```bash
 method: POST
 ```
@@ -243,6 +243,7 @@ method: POST
 curl --location 'http://localhost:8055/files' \
 --form 'file=@"/Users/Alfa/profile.png"'
 ```
+### Response
 Respuesta esperada
 ```json
 {
