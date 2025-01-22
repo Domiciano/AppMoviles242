@@ -38,7 +38,7 @@ services:
       - db
 ```
 Luego ejecute el siguiente comando para hacer startup solo de la base de datos.
-```
+```bash
 docker-compose up db -d
 ```
 
@@ -48,7 +48,7 @@ Usted debe diseñar el modelo de datos para que corra en la base de datos de Pos
 # Authentication
 
 ## Login
-```
+```bash
 curl --location 'http://localhost:8055/auth/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -57,7 +57,7 @@ curl --location 'http://localhost:8055/auth/login' \
 }'
 ```
 ## Registro de usuario
-```
+```bash
 curl --location 'http://localhost:8055/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -70,25 +70,25 @@ curl --location 'http://localhost:8055/users' \
 ```
 
 ## Obtener usuarios
-```
+```bash
 curl --location 'http://localhost:8055/users'
 ```
 
 ## Obtener mi usuario
-```
+```bash
 curl --location 'http://localhost:8055/users/me' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdkMTc4YmJlLWRjOWYtNGVkMy04MDg4LWY2OTJiMzMzYzljZCIsInJvbGUiOiIzMzFjOTAyOC1lM2Q0LTRhYTQtOTc0Mi00ZDNkMGQwOWQ4ZjMiLCJhcHBfYWNjZXNzIjp0cnVlLCJhZG1pbl9hY2Nlc3MiOnRydWUsImlhdCI6MTczNzU1OTM5MSwiZXhwIjoxNzM3NTYwMjkxLCJpc3MiOiJkaXJlY3R1cyJ9.vmBn93HKk7dhlkZRRzIsyMabl0QFItWRMxWyB3dAmR4'
 ```
 
 
 ## Obtener mis permisos
-```
+```bash
 curl --location 'http://localhost:8055/permissions/me' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI3YWUyMjJkLWRmNjItNDA5ZC1hNDEzLTM5M2ZlNTJkNTNkMCIsInJvbGUiOiIxNzU1M2ExNS1lMmJiLTRhZmMtODE0NC0wNjZlZWVjODkzMGMiLCJhcHBfYWNjZXNzIjpmYWxzZSwiYWRtaW5fYWNjZXNzIjpmYWxzZSwiaWF0IjoxNzM3MTQ2NzI4LCJleHAiOjE3MzcxNDc2MjgsImlzcyI6ImRpcmVjdHVzIn0.Iwi-FHU5GkubYR5khmBR30acXhU2P01eyaAXWnclcl4'
 ```
 
 ## Obtener rol por ID
-```
+```bash
 curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f3'
 ```
 
@@ -100,7 +100,7 @@ curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f
 
 # Realtime
 
-```
+```javascript
 connection.send(
     JSON.stringify({
         type: 'subscribe',
