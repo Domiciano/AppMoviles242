@@ -94,12 +94,35 @@ curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f
 
 # Data
 
+## Obtener todos los registros de una colección
+```
+curl --location 'http://localhost:8055/items/post'
+```
+
+## Obtener un registro por ID
+```
+curl --location 'http://localhost:8055/items/post/11'
+```
+
+## Filtrar por medio de equivalencia en un campo
+```
+curl --location --globoff 'http://localhost:8055/items/post?filter[title][_eq]=Alfa'
+```
+
+## Seleccionar campos a obtener
+```
+curl --location 'http://localhost:8055/items/post?fields=title,body'
+```
+
+
 
 # Files
 
 
 # Realtime
 
+
+## Query completo por medio de Websocket
 ```javascript
 connection.send(
     JSON.stringify({
