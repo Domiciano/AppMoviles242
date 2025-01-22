@@ -49,15 +49,13 @@ Usted debe diseñar el modelo de datos para que corra en la base de datos de Pos
 
 ## Login
 ### Request
-Method
 ```bash
 POST
 ```
-URL
 ```
 http://localhost:8055/auth/login
 ```
-Header
+Headers
 ```
 Content-Type: application/json
 ```
