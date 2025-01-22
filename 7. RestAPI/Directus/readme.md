@@ -48,6 +48,7 @@ Usted debe diseñar el modelo de datos para que corra en la base de datos de Pos
 # Authentication
 
 ## Login
+### Request
 ```bash
 method: POST
 ```
@@ -60,6 +61,7 @@ curl --location 'http://localhost:8055/auth/login' \
 }'
 ```
 ## Registro de usuario
+### Request
 ```bash
 method: POST
 ```
@@ -76,6 +78,7 @@ curl --location 'http://localhost:8055/users' \
 ```
 
 ## Obtener usuarios
+### Request
 ```bash
 method: GET
 ```
@@ -84,6 +87,7 @@ curl --location 'http://localhost:8055/users'
 ```
 
 ## Obtener mi usuario
+### Request
 ```bash
 method: GET
 ```
@@ -94,6 +98,7 @@ curl --location 'http://localhost:8055/users/me' \
 
 
 ## Obtener mis permisos
+### Request
 ```bash
 method: GET
 ```
@@ -103,6 +108,7 @@ curl --location 'http://localhost:8055/permissions/me' \
 ```
 
 ## Obtener rol por ID
+### Request
 ```bash
 method: GET
 ```
@@ -113,6 +119,7 @@ curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f
 # Data
 
 ## Obtener todos los registros de una colección
+### Request
 ```bash
 method: GET
 ```
@@ -121,6 +128,7 @@ curl --location 'http://localhost:8055/items/post'
 ```
 
 ## Obtener un registro por ID
+### Request
 ```bash
 method: GET
 ```
@@ -129,6 +137,7 @@ curl --location 'http://localhost:8055/items/post/11'
 ```
 
 ## Filtrar por medio de equivalencia en un campo
+### Request
 ```bash
 method: GET
 ```
@@ -137,6 +146,7 @@ curl --location --globoff 'http://localhost:8055/items/post?filter[title][_eq]=A
 ```
 
 ## Filtrar por medio del operador contains
+### Request
 ```bash
 method: GET
 ```
@@ -145,6 +155,7 @@ curl --location --globoff 'http://localhost:8055/items/post?filter[title][_icont
 ```
 
 ## Seleccionar campos a obtener
+### Request
 ```bash
 method: GET
 ```
@@ -153,6 +164,7 @@ curl --location 'http://localhost:8055/items/post?fields=title,body'
 ```
 
 ## Paginación
+### Request
 ```bash
 method: GET
 ```
@@ -161,6 +173,7 @@ curl --location 'http://localhost:8055/items/post?limit=5&offset=0'
 ```
 
 ## Ordenamiento
+### Request
 ```bash
 method: GET
 ```
@@ -169,6 +182,7 @@ curl --location 'http://localhost:8055/items/post?sort=-title'
 ```
 
 ## Búsqueda por cualquier campo
+### Request
 ```bash
 method: GET
 ```
@@ -177,6 +191,7 @@ curl --location 'http://localhost:8055/items/post?search=fa'
 ```
 
 ## Agregar elemento
+### Request
 ```bash
 method: POST
 ```
@@ -192,6 +207,7 @@ curl --location 'http://localhost:8055/items/post' \
 ```
 
 ## Agregar grupo de elementos
+### Request
 ```bash
 method: POST
 ```
@@ -214,6 +230,7 @@ curl --location 'http://localhost:8055/items/post' \
 ```
 
 ## Cambiar valores de campos
+### Request
 ```bash
 method: PATCH
 ```
@@ -226,6 +243,7 @@ curl --location --request PATCH 'http://localhost:8055/items/post/22' \
 ```
 
 ## Eliminar elemento
+### Request
 ```bash
 method: DELETE
 ```
@@ -278,6 +296,7 @@ curl --location 'http://localhost:8055/files' \
 ```
 
 ### Cambiar metadatos del archivo
+### Request
 ```bash
 method: PATCH
 ```
@@ -294,6 +313,7 @@ curl --location --request PATCH 'http://localhost:8055/files/616e89a8-5cfd-4c56-
 ```
 
 ## Obtener archivo por ID
+### Request
 ```bash
 method: GET
 ```
