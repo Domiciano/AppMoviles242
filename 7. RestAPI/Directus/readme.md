@@ -235,6 +235,40 @@ curl --location --request DELETE 'http://localhost:8055/items/post/21'
 
 # Files
 
+## Subir archivo
+```bash
+method: POST
+```
+```bash
+curl --location 'http://localhost:8055/files' \
+--form 'file=@"/Users/Alfa/profile.png"'
+```
+
+### Cambiar metadatos del file
+```bash
+method: PATCH
+```
+```bash
+curl --location --request PATCH 'http://localhost:8055/files/616e89a8-5cfd-4c56-a2e8-61d9d26ad20e' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title": "616e89a8-5cfd-4c56-a2e8-61d9d26ad20e",
+    "type": "image/png",
+    "storage": "local",
+    "filename_download": "616e89a8-5cfd-4c56-a2e8-61d9d26ad20e"
+}
+'
+```
+
+## Obtener archivo por ID
+```bash
+method: GET
+```
+```bash
+curl --location 'http://localhost:8055/assets/616e89a8-5cfd-4c56-a2e8-61d9d26ad20e'
+```
+
+
 
 # Realtime
 
