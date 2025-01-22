@@ -49,21 +49,24 @@ Usted debe diseñar el modelo de datos para que corra en la base de datos de Pos
 
 ## Login
 ### Request
+Method
 ```bash
-method: POST
+POST
 ```
-
+URL
 ```
 http://localhost:8055/auth/login
 ```
-
-```bash
-curl --location 'http://localhost:8055/auth/login' \
---header 'Content-Type: application/json' \
---data-raw '{
+Header
+```
+Content-Type: application/json
+```
+Body
+```json
+{
     "email": "domic.rincon@gmail.com",
     "password": "alfabeta"
-}'
+}
 ```
 ### Response
 ```json
