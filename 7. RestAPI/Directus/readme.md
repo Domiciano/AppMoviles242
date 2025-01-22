@@ -52,6 +52,11 @@ Usted debe diseñar el modelo de datos para que corra en la base de datos de Pos
 ```bash
 method: POST
 ```
+
+```
+http://localhost:8055/auth/login
+```
+
 ```bash
 curl --location 'http://localhost:8055/auth/login' \
 --header 'Content-Type: application/json' \
@@ -75,6 +80,11 @@ curl --location 'http://localhost:8055/auth/login' \
 ```bash
 method: POST
 ```
+
+```
+http://localhost:8055/users
+```
+
 ```bash
 curl --location 'http://localhost:8055/users' \
 --header 'Content-Type: application/json' \
@@ -92,6 +102,11 @@ curl --location 'http://localhost:8055/users' \
 ```bash
 method: GET
 ```
+
+```
+http://localhost:8055/users
+```
+
 ```bash
 curl --location 'http://localhost:8055/users'
 ```
@@ -101,6 +116,11 @@ curl --location 'http://localhost:8055/users'
 ```bash
 method: GET
 ```
+
+```
+http://localhost:8055/users/me
+```
+
 ```bash
 curl --location 'http://localhost:8055/users/me' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdkMTc4YmJlLWRjOWYtNGVkMy04MDg4LWY2OTJiMzMzYzljZCIsInJvbGUiOiIzMzFjOTAyOC1lM2Q0LTRhYTQtOTc0Mi00ZDNkMGQwOWQ4ZjMiLCJhcHBfYWNjZXNzIjp0cnVlLCJhZG1pbl9hY2Nlc3MiOnRydWUsImlhdCI6MTczNzU1OTM5MSwiZXhwIjoxNzM3NTYwMjkxLCJpc3MiOiJkaXJlY3R1cyJ9.vmBn93HKk7dhlkZRRzIsyMabl0QFItWRMxWyB3dAmR4'
@@ -112,6 +132,11 @@ curl --location 'http://localhost:8055/users/me' \
 ```bash
 method: GET
 ```
+
+```
+http://localhost:8055/permissions/me
+```
+
 ```bash
 curl --location 'http://localhost:8055/permissions/me' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI3YWUyMjJkLWRmNjItNDA5ZC1hNDEzLTM5M2ZlNTJkNTNkMCIsInJvbGUiOiIxNzU1M2ExNS1lMmJiLTRhZmMtODE0NC0wNjZlZWVjODkzMGMiLCJhcHBfYWNjZXNzIjpmYWxzZSwiYWRtaW5fYWNjZXNzIjpmYWxzZSwiaWF0IjoxNzM3MTQ2NzI4LCJleHAiOjE3MzcxNDc2MjgsImlzcyI6ImRpcmVjdHVzIn0.Iwi-FHU5GkubYR5khmBR30acXhU2P01eyaAXWnclcl4'
@@ -122,9 +147,11 @@ curl --location 'http://localhost:8055/permissions/me' \
 ```bash
 method: GET
 ```
-```bash
-curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f3'
+
 ```
+http://localhost:8055/roles/<Role UUID>
+```
+
 
 # Data
 
@@ -133,8 +160,9 @@ curl --location 'http://localhost:8055/roles/331c9028-e3d4-4aa4-9742-4d3d0d09d8f
 ```bash
 method: GET
 ```
+
 ```
-curl --location 'http://localhost:8055/items/post'
+http://localhost:8055/items/post
 ```
 
 ## Obtener un registro por ID
@@ -142,8 +170,9 @@ curl --location 'http://localhost:8055/items/post'
 ```bash
 method: GET
 ```
-```bash
-curl --location 'http://localhost:8055/items/post/11'
+
+```
+http://localhost:8055/items/post/11
 ```
 
 ## Filtrar por medio de equivalencia en un campo
@@ -151,8 +180,9 @@ curl --location 'http://localhost:8055/items/post/11'
 ```bash
 method: GET
 ```
-```bash
-curl --location --globoff 'http://localhost:8055/items/post?filter[title][_eq]=Alfa'
+
+```
+http://localhost:8055/items/post?filter[title][_eq]=<String de búsqueda>
 ```
 
 ## Filtrar por medio del operador contains
@@ -160,18 +190,22 @@ curl --location --globoff 'http://localhost:8055/items/post?filter[title][_eq]=A
 ```bash
 method: GET
 ```
+
 ```
-curl --location --globoff 'http://localhost:8055/items/post?filter[title][_icontains]=mMa'
+http://localhost:8055/items/post?filter[title][_icontains]=<String de búsqueda>
 ```
+
 
 ## Seleccionar campos a obtener
 ### Request
 ```bash
 method: GET
 ```
-```bash
-curl --location 'http://localhost:8055/items/post?fields=title,body'
+
 ```
+http://localhost:8055/items/post?fields=title,body
+```
+
 
 ## Paginación
 ### Request
