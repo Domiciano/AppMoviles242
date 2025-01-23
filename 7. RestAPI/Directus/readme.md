@@ -67,7 +67,7 @@ Content-Type: application/json
     "password": "alfabeta"
 }
 ```
-### Response
+> Expected response
 ```json
 {
     "data": {
