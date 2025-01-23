@@ -94,13 +94,13 @@ POST
 Authorization: Bearer <Admin Access Token>
 ```
 > Body
-```
+```json
 {
     "name": "Application User"
 }
 ```
 > Expected response
-```
+```json
 {
     "data": {
         "id": "003e5737-775e-46ce-8acc-dc2204831898",
