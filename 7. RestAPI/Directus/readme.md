@@ -119,11 +119,9 @@ Authorization: Bearer <Admin Access Token>
 ```
 http://localhost:8055/users
 ```
-
-
 > Method
 ```bash
-method: POST
+POST
 ```
 
 > Headers
@@ -155,7 +153,7 @@ http://localhost:8055/users
 ```
 > Method
 ```bash
-method: GET
+GET
 ```
 > Expected Response
 ```json
@@ -170,7 +168,7 @@ http://localhost:8055/users/me
 ```
 > Method
 ```bash
-method: GET
+GET
 ```
 > Headers
 ```
@@ -191,7 +189,7 @@ http://localhost:8055/permissions/me
 ```
 > Method
 ```bash
-method: GET
+GET
 ```
 > Headers
 ```
@@ -211,7 +209,7 @@ http://localhost:8055/roles/<Role UUID>
 ```
 > Method
 ```bash
-method: GET
+GET
 ```
 > Expected response
 ```json
@@ -229,7 +227,7 @@ method: GET
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 
 ```
@@ -245,7 +243,7 @@ http://localhost:8055/items/post
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 
 ```
@@ -261,7 +259,7 @@ http://localhost:8055/items/post/11
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 
 ```
@@ -277,7 +275,7 @@ http://localhost:8055/items/post?filter[title][_eq]=<String de búsqueda>
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 
 ```
@@ -294,7 +292,7 @@ http://localhost:8055/items/post?filter[title][_icontains]=<String de búsqueda>
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 
 ```
@@ -311,7 +309,7 @@ http://localhost:8055/items/post?fields=title,body
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 ```bash
 curl --location 'http://localhost:8055/items/post?limit=5&offset=0'
@@ -326,7 +324,7 @@ curl --location 'http://localhost:8055/items/post?limit=5&offset=0'
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 ```bash
 curl --location 'http://localhost:8055/items/post?sort=-title'
@@ -340,7 +338,7 @@ curl --location 'http://localhost:8055/items/post?sort=-title'
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 ```
 curl --location 'http://localhost:8055/items/post?search=fa'
@@ -354,7 +352,7 @@ curl --location 'http://localhost:8055/items/post?search=fa'
 > Expected response
 
 ```bash
-method: POST
+POST
 ```
 
 ```bash
@@ -376,7 +374,7 @@ curl --location 'http://localhost:8055/items/post' \
 > Expected response
 
 ```bash
-method: POST
+POST
 ```
 
 ```bash
@@ -404,7 +402,7 @@ curl --location 'http://localhost:8055/items/post' \
 > Expected response
 
 ```bash
-method: PATCH
+PATCH
 ```
 ```bash
 curl --location --request PATCH 'http://localhost:8055/items/post/22' \
@@ -423,7 +421,7 @@ curl --location --request PATCH 'http://localhost:8055/items/post/22' \
 > Expected response
 
 ```bash
-method: DELETE
+DELETE
 ```
 ```bash
 curl --location --request DELETE 'http://localhost:8055/items/post/21'
@@ -439,7 +437,7 @@ curl --location --request DELETE 'http://localhost:8055/items/post/21'
 > Expected response
 
 ```bash
-method: POST
+POST
 ```
 ```bash
 curl --location 'http://localhost:8055/files' \
@@ -488,7 +486,7 @@ curl --location 'http://localhost:8055/files' \
 > Expected response
 
 ```bash
-method: PATCH
+PATCH
 ```
 ```bash
 curl --location --request PATCH 'http://localhost:8055/files/616e89a8-5cfd-4c56-a2e8-61d9d26ad20e' \
@@ -511,7 +509,7 @@ curl --location --request PATCH 'http://localhost:8055/files/616e89a8-5cfd-4c56-
 > Expected response
 
 ```bash
-method: GET
+GET
 ```
 ```bash
 curl --location 'http://localhost:8055/assets/616e89a8-5cfd-4c56-a2e8-61d9d26ad20e'
