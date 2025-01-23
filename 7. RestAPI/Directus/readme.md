@@ -111,18 +111,19 @@ Content-Type: application/json
 ```
 
 ## Obtener usuarios
-### Request
-```bash
-method: GET
-```
-
+> URL
 ```
 http://localhost:8055/users
 ```
-
+> Method
 ```bash
-curl --location 'http://localhost:8055/users'
+method: GET
 ```
+> Expected Response
+```json
+
+```
+
 
 ## Obtener mi usuario
 ### Request
