@@ -78,25 +78,36 @@ Content-Type: application/json
 }
 ```
 ## Registro de usuario
-### Request
-```bash
-method: POST
-```
-
+> URL
 ```
 http://localhost:8055/users
 ```
 
+
+> Method
 ```bash
-curl --location 'http://localhost:8055/users' \
---header 'Content-Type: application/json' \
---data-raw '{
+method: POST
+```
+
+> Headers
+```
+Content-Type: application/json
+```
+> Body
+```json
+{
   "email": "a@a.com",
   "password": "contraseñaSegura123",
   "first_name": "Bob",
   "last_name": "Dylan",
   "role":"17553a15-e2bb-4afc-8144-066eeec8930c"
-}'
+}
+```
+
+> Expected response
+
+```json
+
 ```
 
 ## Obtener usuarios
