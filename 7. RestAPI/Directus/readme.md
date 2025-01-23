@@ -147,6 +147,7 @@ Content-Type: application/json
 ```
 
 ## Obtener usuarios
+Para esto se requiere autorizaciones, por defecto sólo los administradores pueden consultar la lista de usuarios
 > URL
 ```
 http://localhost:8055/users
@@ -157,7 +158,38 @@ GET
 ```
 > Expected Response
 ```json
-
+{
+    "data": [
+        {
+            "id": "7d178bbe-dc9f-4ed3-8088-f692b333c9cd",
+            "first_name": "Admin",
+            "last_name": "User",
+            "email": "domic.rincon@gmail.com",
+            "password": "**********",
+            "location": null,
+            "title": null,
+            "description": null,
+            "tags": null,
+            "avatar": null,
+            "language": null,
+            "tfa_secret": null,
+            "status": "active",
+            "role": "331c9028-e3d4-4aa4-9742-4d3d0d09d8f3",
+            "token": null,
+            "last_access": "2025-01-23T15:22:04.750Z",
+            "last_page": "/settings/roles",
+            "provider": "default",
+            "external_identifier": null,
+            "auth_data": null,
+            "email_notifications": true,
+            "appearance": null,
+            "theme_dark": null,
+            "theme_light": null,
+            "theme_light_overrides": null,
+            "theme_dark_overrides": null
+        }
+    ]
+}
 ```
 
 
@@ -177,6 +209,37 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdkMTc4YmJlL
 
 > Expected response
 ```
+{
+    "data": {
+        "id": "7d178bbe-dc9f-4ed3-8088-f692b333c9cd",
+        "first_name": "Admin",
+        "last_name": "User",
+        "email": "domic.rincon@gmail.com",
+        "password": "**********",
+        "location": null,
+        "title": null,
+        "description": null,
+        "tags": null,
+        "avatar": null,
+        "language": null,
+        "tfa_secret": null,
+        "status": "active",
+        "role": "331c9028-e3d4-4aa4-9742-4d3d0d09d8f3",
+        "token": null,
+        "last_access": "2025-01-23T15:33:18.768Z",
+        "last_page": "/settings/roles",
+        "provider": "default",
+        "external_identifier": null,
+        "auth_data": null,
+        "email_notifications": true,
+        "appearance": null,
+        "theme_dark": null,
+        "theme_light": null,
+        "theme_light_overrides": null,
+        "theme_dark_overrides": null,
+        "policies": []
+    }
+}
 ```
 
 
@@ -198,7 +261,906 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI3YWUyMjJkL
 
 > Expected response
 ```
-
+{
+    "data": {
+        "post": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_flows": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_operations": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_translations": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_extensions": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_collections": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_users": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_policies": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_access": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_versions": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_comments": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_roles": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_revisions": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_folders": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_presets": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_activity": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_files": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_relations": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_sessions": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_permissions": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_dashboards": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_migrations": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_panels": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_webhooks": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_settings": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_notifications": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_fields": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        },
+        "directus_shares": {
+            "create": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "read": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "update": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "delete": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            },
+            "share": {
+                "access": "full",
+                "fields": [
+                    "*"
+                ]
+            }
+        }
+    }
+}
 ```
 
 ## Obtener rol por ID
@@ -213,6 +1175,19 @@ GET
 ```
 > Expected response
 ```json
+{
+    "data": {
+        "id": "331c9028-e3d4-4aa4-9742-4d3d0d09d8f3",
+        "name": "Administrator",
+        "icon": "verified",
+        "description": "$t:admin_description",
+        "parent": null,
+        "children": [],
+        "users": [
+            "7d178bbe-dc9f-4ed3-8088-f692b333c9cd"
+        ]
+    }
+}
 ```
 
 
