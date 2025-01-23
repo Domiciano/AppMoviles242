@@ -13,15 +13,19 @@ services:
       POSTGRES_PASSWORD: directus
     ports:
       - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
 
   directus:
     image: directus/directus
     ports:
       - 8055:8055
     volumes:
-      - ./database:/directus/database
-      - ./uploads:/directus/uploads
-      - ./extensions:/directus/extensions
+      - ./wait-for-it.sh:/directus/wait-for-it.sh
+      - directus_database:/directus/database
+      - directus_uploads:/directus/uploads
+      - directus_extensions:/directus/extensions
+    
     environment:
       SECRET: "alfabeta"
       ADMIN_EMAIL: "domic.rincon@gmail.com"
@@ -36,6 +40,19 @@ services:
       ACCESS_TOKEN_TTL: "3600"
     depends_on:
       - db
+    healthcheck:
+      test: ["CMD", "pg_isready", "-h", "db", "-p", "5432"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+      timeout: 5s
+
+
+volumes:
+  db_data:
+  directus_database:
+  directus_uploads:
+  directus_extensions:
 ```
 Luego ejecute el siguiente comando para hacer startup solo de la base de datos.
 ```bash
@@ -360,18 +377,19 @@ GET
 ## Obtener todos los registros de una colección
 
 > URL
-> Method
-> Headers
-> Body
-> Expected response
-
-```bash
-GET
-```
-
 ```
 http://localhost:8055/items/post
 ```
+> Method
+```
+GET
+```
+> Expected response
+```
+
+```
+
+
 
 ## Obtener un registro por ID
 
