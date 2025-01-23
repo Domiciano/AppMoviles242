@@ -126,7 +126,13 @@ method: GET
 
 
 ## Obtener mi usuario
-### Request
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
+
 ```bash
 method: GET
 ```
@@ -142,7 +148,13 @@ curl --location 'http://localhost:8055/users/me' \
 
 
 ## Obtener mis permisos
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -157,7 +169,13 @@ curl --location 'http://localhost:8055/permissions/me' \
 ```
 
 ## Obtener rol por ID
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -170,7 +188,13 @@ http://localhost:8055/roles/<Role UUID>
 # Data
 
 ## Obtener todos los registros de una colección
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -180,7 +204,13 @@ http://localhost:8055/items/post
 ```
 
 ## Obtener un registro por ID
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -190,7 +220,13 @@ http://localhost:8055/items/post/11
 ```
 
 ## Filtrar por medio de equivalencia en un campo
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -200,7 +236,13 @@ http://localhost:8055/items/post?filter[title][_eq]=<String de búsqueda>
 ```
 
 ## Filtrar por medio del operador contains
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -211,7 +253,13 @@ http://localhost:8055/items/post?filter[title][_icontains]=<String de búsqueda>
 
 
 ## Seleccionar campos a obtener
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -222,7 +270,13 @@ http://localhost:8055/items/post?fields=title,body
 
 
 ## Paginación
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -231,7 +285,13 @@ curl --location 'http://localhost:8055/items/post?limit=5&offset=0'
 ```
 
 ## Ordenamiento
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -240,7 +300,12 @@ curl --location 'http://localhost:8055/items/post?sort=-title'
 ```
 
 ## Búsqueda por cualquier campo
-### Request
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
@@ -249,7 +314,12 @@ curl --location 'http://localhost:8055/items/post?search=fa'
 ```
 
 ## Agregar elemento
-### Request
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: POST
 ```
@@ -265,7 +335,13 @@ curl --location 'http://localhost:8055/items/post' \
 ```
 
 ## Agregar grupo de elementos
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: POST
 ```
@@ -288,7 +364,12 @@ curl --location 'http://localhost:8055/items/post' \
 ```
 
 ## Cambiar valores de campos
-### Request
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: PATCH
 ```
@@ -301,7 +382,13 @@ curl --location --request PATCH 'http://localhost:8055/items/post/22' \
 ```
 
 ## Eliminar elemento
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: DELETE
 ```
@@ -311,7 +398,13 @@ curl --location --request DELETE 'http://localhost:8055/items/post/21'
 
 # Files
 ## Subir archivo
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: POST
 ```
@@ -354,7 +447,13 @@ curl --location 'http://localhost:8055/files' \
 ```
 
 ### Cambiar metadatos del archivo
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: PATCH
 ```
@@ -371,7 +470,13 @@ curl --location --request PATCH 'http://localhost:8055/files/616e89a8-5cfd-4c56-
 ```
 
 ## Obtener archivo por ID
-### Request
+
+> URL
+> Method
+> Headers
+> Body
+> Expected response
+
 ```bash
 method: GET
 ```
