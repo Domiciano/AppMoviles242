@@ -142,8 +142,36 @@ Content-Type: application/json
 > Expected response
 
 ```json
-
-
+{
+    "data": {
+        "id": "4f7406c5-4c74-421e-8e74-715a1f0e9894",
+        "first_name": "Nuevo",
+        "last_name": "Usuario",
+        "email": "a@a.com",
+        "password": "**********",
+        "location": null,
+        "title": null,
+        "description": null,
+        "tags": null,
+        "avatar": null,
+        "language": null,
+        "tfa_secret": null,
+        "status": "active",
+        "role": "331c9028-e3d4-4aa4-9742-4d3d0d09d8f3",
+        "token": null,
+        "last_access": null,
+        "last_page": null,
+        "provider": "default",
+        "external_identifier": null,
+        "auth_data": null,
+        "email_notifications": true,
+        "appearance": null,
+        "theme_dark": null,
+        "theme_light": null,
+        "theme_light_overrides": null,
+        "theme_dark_overrides": null
+    }
+}
 ```
 
 ## Obtener usuarios
@@ -208,7 +236,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdkMTc4YmJlL
 ```
 
 > Expected response
-```
+```json
 {
     "data": {
         "id": "7d178bbe-dc9f-4ed3-8088-f692b333c9cd",
@@ -260,7 +288,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI3YWUyMjJkL
 ```
 
 > Expected response
-```
+```json
 {
     "data": {
         "post": {
