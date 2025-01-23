@@ -77,6 +77,43 @@ Content-Type: application/json
     }
 }
 ```
+
+## Registro de un rol
+Para usar este endpoint debe tener permisos de Administrador. Pero puede ir a definirlo en la consola de administrador en http://localhost:8055/admin/settings/roles.
+
+> URL
+```
+http://localhost:8055/roles
+```
+> Method
+```
+POST
+```
+> Headers
+```
+Authorization: Bearer <Admin Access Token>
+```
+> Body
+```
+{
+    "name": "Application User"
+}
+```
+> Expected response
+```
+{
+    "data": {
+        "id": "003e5737-775e-46ce-8acc-dc2204831898",
+        "name": "Application User",
+        "icon": "supervised_user_circle",
+        "description": null,
+        "parent": null,
+        "children": [],
+        "users": []
+    }
+}
+```
+
 ## Registro de usuario
 > URL
 ```
@@ -107,6 +144,7 @@ Content-Type: application/json
 > Expected response
 
 ```json
+
 
 ```
 
