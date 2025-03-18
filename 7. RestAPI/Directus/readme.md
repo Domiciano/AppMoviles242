@@ -2,6 +2,7 @@
 
 Cree un archivo llamado docker-compose.yml con el siguiente contenido
 ```yml
+
 version: "3"
 services:
 
@@ -17,11 +18,10 @@ services:
       - db_data:/var/lib/postgresql/data
 
   directus:
-    image: directus/directus
+    image: directus/directus:11.5.0
     ports:
       - 8055:8055
     volumes:
-      - ./wait-for-it.sh:/directus/wait-for-it.sh
       - directus_database:/directus/database
       - directus_uploads:/directus/uploads
       - directus_extensions:/directus/extensions
